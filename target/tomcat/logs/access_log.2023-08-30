@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [30/Aug/2023:19:42:42 -0300] "GET /assets/img//undraw_shopping_re_3wst.svg HTTP/1.1" 404 1029 http-bio-8080-exec-2 725
+0:0:0:0:0:0:0:1 - - [30/Aug/2023:19:42:42 -0300] "GET /estilo/teste.css HTTP/1.1" 404 983 http-bio-8080-exec-1 907
+0:0:0:0:0:0:0:1 - - [30/Aug/2023:19:42:43 -0300] "GET /assets/img//undraw_shopping_re_3wst.svg HTTP/1.1" 404 1029 http-bio-8080-exec-1 5
+0:0:0:0:0:0:0:1 - - [30/Aug/2023:19:42:43 -0300] "GET /estilo/teste.css HTTP/1.1" 404 983 http-bio-8080-exec-3 22
+0:0:0:0:0:0:0:1 - - [30/Aug/2023:19:42:43 -0300] "GET /assets/img//undraw_shopping_re_3wst.svg HTTP/1.1" 404 1029 http-bio-8080-exec-1 1
+0:0:0:0:0:0:0:1 - - [30/Aug/2023:19:42:43 -0300] "GET /estilo/teste.css HTTP/1.1" 404 983 http-bio-8080-exec-3 2

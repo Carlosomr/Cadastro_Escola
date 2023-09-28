@@ -1,0 +1,115 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<form class="form-horizontal" action="/cadastre-se" method="post">
+    <fieldset>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Cadastro de Cliente</div>
+
+            <div class="panel-body">
+                <div class="form-group">
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="car-name">Nome <h11>*</h11></label>
+                    <div class="col-md-8">
+                        <input id="car-name" name="car-name" placeholder="" class="form-control input-md" required="" type="text">
+                    </div>
+
+
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="car-cpf">CPF <h11>*</h11></label>
+                    <div class="col-md-2">
+                        <input id="car-cpf" name="car-cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+                    </div>
+
+
+                    <label class="col-md-1 control-label" for="car-nascimento">Nascimento<h11>*</h11></label>
+                    <div class="col-md-2">
+                        <input id="car-nascimento" name="car-nascimento" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="date" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input id="car-telefone" name="car-telefone" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                                   OnKeyPress="formatar('## #####-####', this)">
+                        </div>
+                    </div>
+
+                    <label class="col-md-1 control-label" for="car-email">Telefone</label>
+                </div>
+
+                <!-- Prepended text-->
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="car-email">Email <h11>*</h11></label>
+                    <div class="col-md-5">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input id="car-email" name="car-email" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Search input-->
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="car-cep">CEP <h11>*</h11></label>
+                    <div class="col-md-2">
+                        <input id="car-cep" name="car-cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
+                    </div>
+                </div>
+
+                <!-- Prepended text-->
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="car-logradouro">Complemento</label>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">Rua</span>
+                            <input id="car-logradouro" name="car-logradouro" class="form-control" placeholder="" required=""  type="text">
+                        </div>
+
+                    </div>
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">Nº <h11>*</h11></span>
+                            <input id="car-complemento" name="car-complemento" class="form-control" placeholder="" required=""  type="text">
+                        </div>
+
+                    </div>
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">Nº <h11>*</h11></span>
+                            <input id="car-complemento" name="car-complemento" class="form-control" placeholder="" required=""  type="text">
+                        </div>
+
+                    </div>
+                    </div>
+
+                </div>
+
+
+                    </div>
+
+                    </div>
+                </div>
+
+
+
+    </fieldset>
+</form>
+
+</body>
+</html>
